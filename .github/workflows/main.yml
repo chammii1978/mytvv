@@ -72,7 +72,7 @@ jobs:
             cd ../..
             rm -rf .git
             cd ..
-            git clone https://${{ github.event.inputs.git_token }}@github.com/${{ github.event.inputs.git_id }}/Tata-Sky-IPTV
+            git clone https://${{ github.event.inputs.git_token }}@github.com/${{ github.event.inputs.git_id }}/MyTataSky-Daily
             rm -rf MyTataSky-Daily/*
             rm -rf MyTataSky-Daily/.github
             mv Tata-Sky-IPTV/* MyTataSky-Daily/
