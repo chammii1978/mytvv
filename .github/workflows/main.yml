@@ -53,9 +53,9 @@ jobs:
             dir="${gist_url##*/}"
             git clone https://github.com/Sanju2105/sneh-tatasky
             gh repo create MyTataSky-Daily --private -y || echo "New repo has been created"
-            mv ../TSlogin.exp Tata-Sky-IPTV/code_samples/
-            chmod 755 Tata-Sky-IPTV/code_samples/TSlogin.exp
-            cd Tata-Sky-IPTV/
+            mv ../TSlogin.exp sneh-tatasky/code_samples/
+            chmod 755 sneh-tatasky/code_samples/TSlogin.exp
+            cd sneh-tatasky/
             mkdir .github
             cd .github
             mkdir workflows
