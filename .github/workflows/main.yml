@@ -30,7 +30,7 @@ jobs:
       run: |
             git config --global user.name "${{ github.event.inputs.git_id }}"
             git config --global user.email "${{ github.event.inputs.git_mail }}"
-            git clone https://github.com/ForceGT/Tata-Sky-IPTV
+            git clone https://github.com/chammii1978/Tata-Sky-IPTV
             cd Tata-Sky-IPTV/
             cd code_samples/
             sudo apt install expect -y
@@ -51,7 +51,7 @@ jobs:
             sed -i 's/gist/${{ github.event.inputs.git_token }}@gist/g' gist_link.txt
             gist_url=$(cat gist_link.txt)
             dir="${gist_url##*/}"
-            git clone https://github.com/ForceGT/Tata-Sky-IPTV
+            git clone https://github.com/chammii1978/Tata-Sky-IPTV
             gh repo create MyTataSky-Daily --private -y || echo "New repo has been created"
             mv ../TSlogin.exp Tata-Sky-IPTV/code_samples/
             chmod 755 Tata-Sky-IPTV/code_samples/TSlogin.exp
