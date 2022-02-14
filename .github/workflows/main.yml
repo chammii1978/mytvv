@@ -11,8 +11,8 @@ on:
     sub_id:
       description: 'Enter your Tata Sky Subscriber ID'
       required: true
-    tata_pass:
-      description: 'Enter your Tata Sky Password'     
+    tata_otp:
+      description: 'Enter your Tata Sky otp'     
       required: true
     git_mail:
       description: 'Enter your GitHub Mail Address'
